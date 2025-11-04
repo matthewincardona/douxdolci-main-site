@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef } from "react";
 import { Toaster } from "./components/ui/sonner";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
@@ -11,7 +11,10 @@ export default function App() {
 
   const scrollToContact = () => {
     if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      contactRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
     }
   };
 
@@ -19,17 +22,17 @@ export default function App() {
     <div className="bg-[#f7f6f6] w-full overflow-hidden">
       <div className="flex flex-col">
         <HeroSection onGetInTouchClick={scrollToContact} />
-        
-        <ServicesSection 
-          selectedService={selectedService} 
-          onServiceClick={setSelectedService} 
+
+        <ServicesSection
+          selectedService={selectedService}
+          onServiceClick={setSelectedService}
         />
-        
+
         <ProjectsSection />
-        
+
         <ContactSection contactRef={contactRef} />
       </div>
-      
+
       <Toaster />
     </div>
   );
