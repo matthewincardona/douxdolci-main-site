@@ -38,28 +38,19 @@ function SectionHeader() {
   );
 }
 
-function ProjectImage1() {
-  return (
-    <div className="relative w-[260px] h-[826px]">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img
-          alt=""
-          className="absolute h-[101.45%] left-[-1.54%] max-w-none top-[-0.36%] w-[103.86%]"
-          src={img2415791314659056195646359C751}
-        />
-      </div>
-      <div className="absolute top-[3px] left-[9px] bg-white h-[7px] w-3.5" />
-    </div>
-  );
-}
-
 export default function ProjectsSection() {
   return (
-    <div className="w-full py-24 px-8 bg-transparent">
-      <div className="max-w-[1440px] mx-auto">
-        <SectionHeader />
+    <div className="z-10 w-full py-24 bg-transparent">
+      <SectionHeader />
 
-        <div className="flex gap-[23px] items-start">
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "224px 1fr",
+        }}
+      >
+        <div></div>
+        <div className="flex gap-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -107,9 +98,7 @@ export default function ProjectsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <ProjectImage1 />
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
     </div>
