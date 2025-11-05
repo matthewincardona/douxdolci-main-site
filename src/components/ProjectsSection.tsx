@@ -1,8 +1,30 @@
 import { motion } from "motion/react";
-import img2415791314659056195646359C751 from "figma:asset/116e844616e305cf89367ef0443c43feef1e290a.png";
-import imgImage7 from "figma:asset/7373497be242ca651056da6c7ff54af242d8d1cd.png";
-import imgImage10 from "figma:asset/55b6ab52cf6f7090679e77c06cb74e6f3141ff96.png";
-import imgImage9 from "figma:asset/9f806dbb4ffac4c3c4f585bb94f58aeec903252f.png";
+import murban from "../assets/projects/murban.webp";
+import mEdTeam from "../assets/projects/mEd Team Section.webp";
+import kpgt from "../assets/projects/KPGT.webp";
+
+const projectData = [
+  {
+    title: "Matt Urban Marketing",
+    src: murban,
+    alt: "Screenshot of a local marketing agency website",
+  },
+  {
+    title: "mEducation Alliance Team Page",
+    src: mEdTeam,
+    alt: "Screenshot of a global education development nonprofit team page",
+  },
+  {
+    title: "Katy Parents of Gifted & Talented Students",
+    src: kpgt,
+    alt: "Screenshot of a Texas-based sudent parent orgranization website",
+  },
+  {
+    title: "Matt Urban Marketing",
+    src: murban,
+    alt: "Matt Urban Marketing Project Screenshot",
+  },
+];
 
 function SectionHeader() {
   return (
@@ -15,7 +37,7 @@ function SectionHeader() {
           transition={{ duration: 0.6 }}
           className="h-[21px] leading-[normal] text-[#101010] text-[16px] text-right w-full"
         >
-          EXPLORE A LITTLE
+          WHAT WE'VE DONE FOR OTHERS
         </motion.p>
         <motion.div
           initial={{ scaleX: 0 }}
@@ -50,55 +72,27 @@ export default function ProjectsSection() {
         }}
       >
         <div></div>
-        <div className="flex gap-4">
-          <motion.div
+        <div className="flex flex-wrap gap-4">
+          {/* <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="h-[530px] w-[270px] relative overflow-hidden"
-          >
-            <img
-              alt=""
-              className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-              src={imgImage7}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="h-[900px] w-[270px] relative overflow-hidden"
-          >
-            <img
-              alt=""
-              className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-              src={imgImage10}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="h-[599px] w-[270px] relative overflow-hidden"
-          >
-            <img
-              alt=""
-              className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-              src={imgImage9}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          ></motion.div>
+          > */}
+          {projectData.map((projects, index) => (
+            <div
+              key={index}
+              className="relative hover:z-40 w-[360px] max-w-none"
+            >
+              <img
+                alt={projects.alt}
+                className="transition-all  hover:scale-150 object-cover size-full"
+                src={projects.src}
+              />
+            </div>
+          ))}
+          {/* </motion.div> */}
         </div>
       </div>
     </div>
