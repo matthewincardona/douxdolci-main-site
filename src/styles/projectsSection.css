@@ -1,0 +1,13 @@
+/* @keyframes grayOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+    z-index: 10;
+  }
+} */
+
+/* when nothing is being hovered, apply no effects */
+/* when an image is being hovered, apply a scale effect to it */
+/* when an image is being hovered, all other images are greyed out */

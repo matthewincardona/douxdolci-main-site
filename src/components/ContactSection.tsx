@@ -112,7 +112,7 @@ export default function ContactSection({ contactRef }: ContactSectionProps) {
         }}
       />
 
-      <div className="max-w-[1440px] mx-auto relative z-10">
+      <div className="max-w-[1440px] mx-auto relative">
         <ContactTabs />
 
         <div className="flex items-start justify-between gap-12">
