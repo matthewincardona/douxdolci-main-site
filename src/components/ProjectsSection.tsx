@@ -14,7 +14,7 @@ import susanRodgers from "../assets/projects/Susan Rodgers.webp";
 import STSS1 from "../assets/projects/STSS Industry Page.webp";
 import STSS2 from "../assets/projects/STSS Home.webp";
 import togbok from "../assets/projects/Togbok.webp";
-import sbc4eHub from "../assets/projects/SBC4e Hub.webp";
+import sbc4eHub from "../assets/projects/SBC4E Hub.webp";
 import dorothyCatapano from "../assets/projects/Dorothy Catapano.webp";
 import patientPassport from "../assets/projects/Patient Passport.webp";
 
