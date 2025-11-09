@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import ProjectLightbox from "./ProjectLightbox";
-import murban1 from "../assets/projects/murban.webp";
-import murban2 from "../assets/projects/murban.webp";
+import murban1 from "@/assets/projects/murban.webp";
+import murban2 from "@/assets/projects/murban.webp";
 import mEdTeam from "../assets/projects/mEd Team Section.webp";
 import mEdMathGames from "../assets/projects/mEd Math Games.webp";
 import mEdMathPower from "../assets/projects/mEd Math Power.webp";
