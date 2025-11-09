@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import ProjectLightbox from "./ProjectLightbox";
-import murban1 from "@assets/projects/murban.webp";
-import murban2 from "@assets/projects/murban.webp";
-import mEdTeam from "@assets/projects/mEd Team Section.webp";
-import mEdMathGames from "@assets/projects/mEd Math Games.webp";
-import mEdMathPower from "@assets/projects/mEd Math Power.webp";
-import kpgt1 from "@assets/projects/KPGT.webp";
-import kpgt2 from "@assets/projects/Tailored Male.webp";
-import simmons1 from "@assets/projects/Yvette Simmons Homepage.webp";
-import simmons2 from "@assets/projects/Yvette Simmons.webp";
-import susanRodgers from "@assets/projects/Susan Rodgers.webp";
-import STSS1 from "@assets/projects/STSS Industry Page.webp";
-import STSS2 from "@assets/projects/STSS Home.webp";
-import togbok from "@assets/projects/Togbok.webp";
-import sbc4eHub from "@assets/projects/SBC4e Hub.webp";
-import dorothyCatapano from "@assets/projects/Dorothy Catapano.webp";
-import patientPassport from "@assets/projects/Patient Passport.webp";
+import murban1 from "../assets/projects/murban.webp";
+import murban2 from "../assets/projects/murban.webp";
+import mEdTeam from "../assets/projects/mEd Team Section.webp";
+import mEdMathGames from "../assets/projects/mEd Math Games.webp";
+import mEdMathPower from "../assets/projects/mEd Math Power.webp";
+import kpgt1 from "../assets/projects/KPGT.webp";
+import kpgt2 from "../assets/projects/Tailored Male.webp";
+import simmons1 from "../assets/projects/Yvette Simmons Homepage.webp";
+import simmons2 from "../assets/projects/Yvette Simmons.webp";
+import susanRodgers from "../assets/projects/Susan Rodgers.webp";
+import STSS1 from "../assets/projects/STSS Industry Page.webp";
+import STSS2 from "../assets/projects/STSS Home.webp";
+import togbok from "../assets/projects/Togbok.webp";
+import sbc4eHub from "../assets/projects/SBC4e Hub.webp";
+import dorothyCatapano from "../assets/projects/Dorothy Catapano.webp";
+import patientPassport from "../assets/projects/Patient Passport.webp";
 
 const projectData = [
   {
