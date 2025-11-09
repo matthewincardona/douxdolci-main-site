@@ -32,14 +32,14 @@ export default function ProjectLightbox({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-[100] backdrop-blur-sm"
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-100 backdrop-blur-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
         >
           <motion.div
-            className="relative flex flex-col md:flex-row items-center justify-center gap-8 bg-black/40 rounded-lg overflow-hidden z-[100]"
+            className="relative flex flex-col md:flex-row items-center justify-center gap-8 bg-black/40 rounded-lg overflow-hidden z-100"
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
@@ -81,7 +81,7 @@ export default function ProjectLightbox({
           {images.length > 1 && (
             <>
               <button
-                className="absolute left-0 top-0 h-full w-[120px] flex items-center justify-start text-white text-6xl z-[100] hover:bg-black/20 transition-colors"
+                className="absolute left-0 top-0 h-full w-[120px] flex items-center justify-start text-white text-6xl z-100 hover:bg-black/20 transition-colors"
                 onClick={(e) => {
                   e.stopPropagation();
                   setCurrentImage(
